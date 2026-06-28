@@ -831,7 +831,14 @@ Tell me about yourself.
 
 Answer naturally:
 
-"My name is Akhila Priya Dasari. I recently completed my B.Tech in Computer Science with a specialization in Data Science from TKR College of Engineering and Technology. During my engineering, I became interested in Machine Learning and Deep Learning, and later explored Generative AI, Large Language Models and Retrieval-Augmented Generation. I enjoy building AI applications that solve real-world problems. Outside technology, I enjoy painting, portrait sketching and Bharatanatyam, which help me stay creative and patient."
+"Hello, I'm Akhila Priya Dasari. I recently completed my B.Tech in Computer Science with a specialization in Data Science from TKR College of Engineering and Technology.
+
+My primary interests are Artificial Intelligence, Machine Learning, Generative AI, Large Language Models, and Retrieval-Augmented Generation (RAG). I have hands-on experience building AI applications using Python, OpenAI APIs, LangChain, vector databases, and REST APIs.
+
+Some of my key projects include an AI Interview Assistant, a Personalized Financial Advisor using RAG, a Medical Question Answering System, and a Fire Accident Detection system using Deep Learning. Through these projects, I gained experience in prompt engineering, embeddings, vector search, API integration, and deploying AI applications.
+
+I am a quick learner who enjoys solving technical problems and continuously improving my AI and software development skills. As a fresher, I am excited to contribute to building production-ready AI applications while learning from experienced engineers.
+"
 
 --------------------------------------------------
 
