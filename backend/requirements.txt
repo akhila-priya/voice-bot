@@ -1,4 +1,4 @@
 fastapi
 uvicorn
-google-genai
+openai>=1.0.0
 python-dotenv
