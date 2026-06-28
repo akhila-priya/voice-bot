@@ -17,8 +17,11 @@ client = OpenAI(
 
 def ask_ai(question: str):
 
-    # Save user's message
+    # Save user's question
     add_message("user", question)
+
+    # Keep only the last 4 messages to reduce token usage
+    history = get_history()[-4:]
 
     # Build conversation
     messages = [
@@ -28,20 +31,26 @@ def ask_ai(question: str):
         }
     ]
 
-    # Add previous conversation
-    messages.extend(get_history())
+    # Add recent conversation only
+    messages.extend(history)
 
-    # Ask Groq
-    response = client.chat.completions.create(
-        model="llama-3.1-8b-instant",
-        messages=messages,
-        temperature=0.5,
-        max_tokens=400
-    )
+    try:
+        response = client.chat.completions.create(
+            model="llama-3.1-8b-instant",
+            messages=messages,
+            temperature=0.5,
+            max_tokens=400
+        )
 
-    answer = response.choices[0].message.content
+        answer = response.choices[0].message.content
 
-    # Save AI answer
+    except Exception:
+        answer = (
+            "Sorry, I'm unable to answer right now. "
+            "Please try asking again."
+        )
+
+    # Save AI response
     add_message("assistant", answer)
 
     return answer
