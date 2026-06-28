@@ -4,7 +4,7 @@ const clearBtn = document.getElementById("clearBtn");
 const questionInput = document.getElementById("question");
 const chatBox = document.getElementById("chatBox");
 
-const API_URL = "http://127.0.0.1:8000/chat";
+const API_URL = "https://voice-bot-9lxd.onrender.com/chat";
 const CLEAR_URL = "http://127.0.0.1:8000/clear";
 
 let recognition = null;
